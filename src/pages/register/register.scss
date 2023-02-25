@@ -1,0 +1,76 @@
+.register {
+  height: 100vh; //all screen
+  background-color: rgb(224, 255, 255);
+  display: flex; //to center
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 60%; //makes card 50% of the screen
+    display: flex;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    .left {
+      flex: 1; //makes left and right card equal size
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://personalexcellence.co/files/5-people.jpg") center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      color: white;
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      p {
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 50%;
+        padding: 10px;
+        border: 10%;
+        background-color: white;
+        color: rgb(65, 105, 225);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .right {
+      background-color: white;
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      gap: 50px;
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #938eef;
+          color: white;
+          font-weight: bold;
+          gap: 100px;
+        }
+      }
+    }
+  }
+}
